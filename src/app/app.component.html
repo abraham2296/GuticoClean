@@ -1,4 +1,4 @@
-
+<body>
 <header class="container">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="separador container-fluid">
@@ -12,7 +12,6 @@
               aria-controls="navbarNav" 
               aria-expanded="false" 
               aria-label="Toggle navigation">
-              <!-- <i class="bi bi-list"></i> -->
               <label class="hamburger">
                 <input type="checkbox">
                 <svg viewBox="0 0 32 32">
@@ -24,10 +23,10 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link-li" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link-li" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link-li" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link-li" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link-li" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link-li" href="#about-Us">About Us</a></li>
+          <li class="nav-item"><a class="nav-link-li" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link-li" href="#contact">Contact</a></li>
         </ul>
       </div>
 
@@ -39,34 +38,57 @@
 <!-- Section Home -->
 <section class="banner-principal" id="home">
   <div class="contenedor-bann-princ">
-    <img src="/assets/icono/Isotipo fantasma.png" alt="isotipo" class="isotipo">
+    <img loading="lazy" src="/assets/icono/Isotipo fantasma.png" alt="isotipo" class="isotipo">
       <h1 class="h1-principal">The Cleanliness <br> You Deserve</h1>
-    <!-- <button class="btn-principal" type="button">Contact Us</button> -->
-    <button class="btn-principal">
+
+    <!-- <button class="btn-principal">
       <span class="circle1"></span>
       <span class="circle2"></span>
       <span class="circle3"></span>
       <span class="circle4"></span>
       <span class="circle5"></span>
       <span class="text">Contact Us</span>
+    </button> -->
+    
+    <button class="btn-cssbuttons">
+      <span>Contact Us</span>
+      <ul>
+        <li>
+          <a href="https://wa.link/vzo0pn" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/guticoclean/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="tel:+1 4075751586" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-telephone-outbound"></i>
+          </a>
+        </li>
+      </ul>
     </button>
+
+
   </div>
 </section>
 
 <div class="contenedor-circulos">
-  <div class="circulo"></div>
-  <div class="circulo"></div>
-  <div class="circulo"></div>
-  <div class="circulo"></div>
+  <div class="circulo" data-aos="fade-left" data-aos-duration="1500"></div>
+  <div class="circulo" data-aos="fade-left" data-aos-duration="2000"></div>
+  <div class="circulo" data-aos="fade-left" data-aos-duration="2500"></div>
+  <div class="circulo" data-aos="fade-left" data-aos-duration="3000"></div>
 </div>
 <!-- cierre home -->
 
 <!-- Section About Us -->
-<section class=" aboutUs">
+<section class="aboutUs" id="about-Us">
 
   <div class="about-1">
 
-    <img src="/assets/img/Imagen seccion about us.png" alt="img-About Us" class="about-img">
+    <img loading="lazy" src="/assets/img/Imagen seccion about us.png" alt="img-About Us" class="about-img">
 
     <div class="about-text1">
       <h2 class="h2-about">About <span>Us</span></h2>
@@ -101,8 +123,8 @@
 
     <div class="about-cards">
 
-      <div class="card-about">
-        <img src="/assets/icono/Icono Values.png" alt="" class="about-icono">
+      <div class="card-about" data-aos="fade-up" data-aos-duration="1500">
+        <img loading="lazy" src="/assets/icono/Icono Values.png" alt="" class="about-icono">
         <div class="text-card">
           <h3 class="about-h3-card">Values</h3>
           <p class="about-p-card">
@@ -117,8 +139,8 @@
         </div>
       </div>
 
-      <div class="card-about1">
-        <img src="/assets/icono/Icono Objetive.png" alt="" class="about-icono">
+      <div class="card-about1" data-aos="fade-up" data-aos-duration="2000">
+        <img loading="lazy" src="/assets/icono/Icono Objetive.png" alt="" class="about-icono">
         <div class="text-card">
           <h3 class="about-h3-card">Objective</h3>
           <p class="about-p-card">
@@ -134,8 +156,8 @@
         </div>
       </div>
 
-      <div class="card-about">
-        <img src="/assets/icono/Icono Method.png" alt="" class="about-icono">
+      <div class="card-about" data-aos="fade-up" data-aos-duration="2500">
+        <img loading="lazy" src="/assets/icono/Icono Method.png" alt="" class="about-icono-escudo">
         <div class="text-card">
           <h3 class="about-h3-card">Method</h3>
           <p class="about-p-card">
@@ -143,7 +165,7 @@
             spaces with the utmost<br>
             transparency for your safety<br>
             and peace of mind, dedicating<br>
-            ourselves </p>
+            ourselves<br><br> </p>
         </div>
       </div>
 
@@ -153,7 +175,7 @@
 <!-- cierre about -->
 
 <!-- section services -->
-<section class="our-services">
+<section class="our-services" id="services">
 
   <div class="contenedor-sub-cards">
     <h2 class="h2-sub-cards">Our <span>Services</span></h2>
@@ -161,7 +183,7 @@
     <div class="sub-cards">
 
       <div class="subC">
-        <img src="/assets/icono/Icono 1 seccion 3.png" alt="icono-sub-cards" class="icon-sub-cards">
+        <img loading="lazy" src="/assets/icono/Icono 1 seccion 3.png" alt="icono-sub-cards" class="icon-sub-cards">
         <div class="contenedor-text-sub">
           <h3 class="h3-sub">Standard cleaning</h3>
         <p class="p-sub">
@@ -174,7 +196,7 @@
       </div>
 
       <div class="subC">
-        <img src="/assets/icono/Icono 2 seccion 3.png" alt="icono-sub-cards" class="icon-sub-cards">
+        <img loading="lazy" src="/assets/icono/Icono 2 seccion 3.png" alt="icono-sub-cards" class="icon-sub-cards">
         <div class="contenedor-text-sub">
           <h3 class="h3-sub">
             Deep cleaning<br>
@@ -193,7 +215,7 @@
     <div class="sub-cards">
 
       <div class="subC">
-        <img src="/assets/icono/Icono 3 seccion 3.png" alt="icono-sub-cards" class="icon-sub-cards">
+        <img loading="lazy" src="/assets/icono/Icono 3 seccion 3.png" alt="icono-sub-cards" class="icon-sub-cards">
         <div class="contenedor-text-sub">
           <h3 class="h3-sub">Trash Removals</h3>
         <p class="p-sub">
@@ -205,7 +227,7 @@
       </div>
   
       <div class="subC">
-        <img src="/assets/icono/Icono 4 seccion 3.png" alt="icono-sub-cards" class="icon-sub-cards">
+        <img loading="lazy" src="/assets/icono/Icono 4 seccion 3.png" alt="icono-sub-cards" class="icon-sub-cards">
         <div class="contenedor-text-sub">
           <h3 class="h3-sub">Post Construction<br>Clean-up</h3>
         <p class="p-sub">
@@ -221,7 +243,7 @@
 
   </div>
 
-  <img src="/assets/img/Imagen seccion 3.png" alt="" class="img-sub-cards">
+  <img loading="lazy" src="/assets/img/Imagen seccion 3.png" alt="" class="img-sub-cards">
     
 </section>
 <!-- Cierre section services -->
@@ -232,32 +254,31 @@
   
   <div class="contenedor-specialite">
     <div class="item-specilaite">
-      <img src="/assets/icono/Icono 1 secicon 4.png" alt="icono-specialite" class="icono-item-specialite">
+      <img loading="lazy" src="/assets/icono/Icono 1 secicon 4.png" alt="icono-specialite" class="icono-item-specialite">
       <h3 class="h3-specialite">Oficce</h3>
     </div>
 
-    <div class="line-decoration-specialite"></div>
+    <div class="line-decoration-specialite" data-aos="fade-right"></div>
 
     <div class="item-specilaite">
-      <img src="/assets/icono/Icono 2 secicon 4.png" alt="icono-specialite" class="icono-item-specialite">
+      <img loading="lazy" src="/assets/icono/Icono 2 secicon 4.png" alt="icono-specialite" class="icono-item-specialite">
       <h3 class="h3-specialite">Sites<br>Commercial</h3>
     </div>
 
-    <div class="line-decoration-specialite"></div>
+    <div class="line-decoration-specialite" data-aos="fade-left"></div>
 
     <div class="item-specilaite">
-      <img src="/assets/icono/Icono 3 secicon 4.png" alt="icono-specialite" class="icono-item-specialite">
+      <img loading="lazy" src="/assets/icono/Icono 3 secicon 4.png" alt="icono-specialite" class="icono-item-specialite">
       <h3 class="h3-specialite">Restaurants</h3>
     </div>
   </div>
 
-  <img src="/assets/icono/Isotipo fantasma con circulo.png" alt="isotipo" class="isotipo-specialite">
+  <img loading="lazy" src="/assets/icono/Isotipo fantasma con circulo.png" alt="isotipo" class="isotipo-specialite">
 
   <div class="carrusel-specialite">
     
-    <!-- estos son intentos anteriores que medio funcionaron -->
 
-    <!-- <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -265,13 +286,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/assets/img/Grupo fotos 1.png" class="d-block w-100" alt="img-slid">
+          <img loading="lazy" src="/assets/img/Grupo fotos 1.png" class="d-bloc " alt="img-slid">
         </div>
         <div class="carousel-item">
-          <img src="/assets/img/Grupo fotos 2.png" class="d-block w-100" alt="img-slid">
+          <img loading="lazy" src="/assets/img/Grupo fotos 2.png" class="d-bloc " alt="img-slid">
         </div>
         <div class="carousel-item">
-          <img src="/assets/img/Grupo fotos 3.png" class="d-block w-100" alt="img-slid">
+          <img loading="lazy" src="/assets/img/Grupo fotos 3.png" class="d-bloc " alt="img-slid">
         </div>
       </div>
       <button class="carousel-control-prev carousel-control-design" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -280,57 +301,187 @@
       <button class="carousel-control-next carousel-control-design" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
         <span class="color carousel-control-next-icon"></span>
       </button>
-    </div> -->
-    <!-- <div *ngIf="images && images.length > 0" class="carrousel-container">
-      <img *ngFor="let image of images; let i= index"
-            [src]="image.imgSrc" 
-            [alt]="image.imgAlt"
-            [ngClass]="{'image-active': selectedIndex === i}">
-    </div> -->
+    </div> 
+  </div>
+</section>
+<!-- cierre section specialite -->
 
-    <!-- cierre de los intentos anteriores -->
+<div class="contenedor-circulos">
+  <div class="circulo" data-aos="fade-right" data-aos-duration="1500"></div>
+  <div class="circulo" data-aos="fade-right" data-aos-duration="2000"></div>
+  <div class="circulo" data-aos="fade-right" data-aos-duration="2500"></div>
+  <div class="circulo" data-aos="fade-right" data-aos-duration="3000"></div>
+</div>
 
-    
-<!-- 
-    @if (images) {
-      <ngb-carousel>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img [src]="images[0]" alt="Random first slide" />
-          </div>
-          <div class="carousel-caption">
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img [src]="images[1]" alt="Random second slide" />
-          </div>
-          <div class="carousel-caption">
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img [src]="images[2]" alt="Random third slide" />
-          </div>
-          <div class="carousel-caption">
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </div>
-        </ng-template>
-      </ngb-carousel>
-    } -->
+<!-- section Choose Us -->
+<section class="choose-Us">
+  <div class="contenedor-choose">
 
+    <div class="choose-item item-choose-img">
+      <img loading="lazy" src="/assets/img/Imagen why choose us.png" alt="" class="choose-img">
+    </div>
+  
+    <div class="choose-item item-choose-card">
+      <div class="choose-card" data-aos="fade-right" data-aos-duration="3000">
+        <div class="contenedor-text-choose-1">
+          <h2 class="h2-choose">Why Choose <span>Us</span></h2>
+          <p class="p-choose">
+            We focus on being a company that stands out for<br>
+            its invocation in the ideas and procedures of our<br>
+            cleaning work, in a professional manner, always<br>
+            perfecting our methods. We are committed to<br>
+            integrity by providing you with a service of<br>
+            excellence above the monetary value that exists<br>
+            in between.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="choose-item item-choose-text">
+      <div class="contenedor-text-choose-2">
+        <h2 class="h2-choose-2">Qualified <span>Team</span></h2>
+          <p class="p-choose-2">
+            We have a skilled team, professionally<br>
+            trained, with high experience in cleaning<br>
+            and sanitizing, which we have prepared<br>
+            and verified to offer you unique skills in<br>
+            the proper maintenance of your<br>
+            facilities. In this way we guarantee the<br>
+            best quality to our customers.
+          </p>
+      </div>
+     
+    </div>
+  
+    <div class="choose-item item-choose-img">
+      <img loading="lazy" src="/assets/img/Imagen Qualified team.png" alt="" class="choose-img">
+    </div>
+  
+  </div>
+</section>
+<!-- Cierre section Choose -->
 
+<!-- section Comment -->
+
+<section class="comment">
+
+  <h2 class="h2-comment">Words From <span>our<br>Customers</span></h2>
+
+  <div id="carouselExampleInterval" class="carousel slide carousel-comment" data-bs-ride="carousel">
+    <div class="carousel-inner carousel-inner-comment">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img loading="lazy" src="/assets/img/Testimonio 1.png" class="img-testimonio" alt="testimonio">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img loading="lazy" src="/assets/img/Testimonio 2.png" class="img-testimonio" alt="testimonio">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img loading="lazy" src="/assets/img/Testimonio 3.png" class="img-testimonio" alt="testimonio">
+      </div>
+    </div>
+    <button class="carousel-control-prev carousel-control-prev-comment" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next carousel-control-next-comment" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </section>
 
+<!-- Cierre section Coment -->
+
+<!-- Section Green -->
+<section class="section-green" id="contact">
+  <div class="contenedor-green">
+
+    <div class="text-green">
+      <h2 class="h2-green">
+        Trust us to keep your<br>
+        spaces impeccable
+      </h2>
+    </div>
+
+    <div class="contenedor-btn">
+      <a href="https://wa.link/vzo0pn" target="_blank" rel="noopener noreferrer">
+        <button class="btn">
+          <span class="btn-text-one">Contact Us</span>
+          <span class="btn-text-two">Great!</span>
+        </button>
+      </a>
+      <a href="https://www.google.com/maps/place/11651+Stoneview+Square,+Reston,+VA+20191,+EE.+UU./@38.9318021,-77.3519139,17z/data=!4m6!3m5!1s0x89b64844a153e647:0x340bff07ff3b6e7c!8m2!3d38.931798!4d-77.349339!16s%2Fg%2F11c5byttt2?entry=" target="_blank" rel="noopener noreferrer">
+        <button class="btn">
+          <span class="btn-text-one">Visit Us</span>
+          <span class="btn-text-two">Great!</span>
+        </button>
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- Cierre Section Green -->
+
+<!-- Section End -->
+<section class="end">
+  <img loading="lazy" src="/assets/icono/Logo completo.png" alt="isotipo" class="logo-end">
+
+  <div class="contenedor-items-end">
+    <div class="content-text-end">
+
+      <div class="texto-end">
+        <p class="p-end">
+          We want to thank you for your<br>
+          confidence in the maintenance of<br>
+          your facilities.<br><br>
+          We are a team formed by qualified<br>
+          professionals in constant constantly<br>
+          trained to provide you with the best<br>
+          the best attention.
+        </p>
+      </div>
+
+      <div class="contact-end">
+        <h3 class="h3-end">Contact Us</h3>
+          <div class="item-end">
+            <img src="/assets/icono/Icono contacto 1 .png" alt="" class="icono-end">
+            <a href="tel:+1 4075751586" target="_blank" rel="noopener noreferrer">
+              <p class="p-icono-end">4075751586</p>
+            </a>
+          </div>
+          <div class="item-end">
+            <img src="/assets/icono/Icono contacto 2.png" alt="" class="icono-end">
+            <a href="mailto:admin@guticoclean.com" target="_blank" rel="noopener noreferrer">
+              <p class="p-icono-end">admin@guticoclean.com</p>
+            </a>
+          </div>
+          <div class="item-end">
+            <img loading="lazy" src="/assets/icono/Icono contacto 3.png" alt="" class="icono-end">
+            <a href="https://www.google.com/maps/place/11651+Stoneview+Square,+Reston,+VA+20191,+EE.+UU./@38.9318021,-77.3519139,17z/data=!4m6!3m5!1s0x89b64844a153e647:0x340bff07ff3b6e7c!8m2!3d38.931798!4d-77.349339!16s%2Fg%2F11c5byttt2?entry=" target="_blank" rel="noopener noreferrer">
+              <p class="p-icono-end">DMV Area, EE. UU.</p>
+            </a>
+          </div>
+      </div>
+    </div>
+    <a href="https://www.google.com/maps/place/11651+Stoneview+Square,+Reston,+VA+20191,+EE.+UU./@38.9318021,-77.3519139,17z/data=!4m6!3m5!1s0x89b64844a153e647:0x340bff07ff3b6e7c!8m2!3d38.931798!4d-77.349339!16s%2Fg%2F11c5byttt2?entry=" target="_blank" rel="noopener noreferrer">
+      <div class="map-img-end">
+      </div>
+    </a>
+  </div>
+
+</section>
+<!-- Cierre Section End -->
+<!-- 
+<section class="btn-flotante"></section>
+<div class="btn-container">
+  <a href="#" class="btn-flout"><i class="bi bi-arrow-up-circle"></i></a>
+</div> -->
 <footer>
   <p class="text-footer">
     © Copyright - 2023/2024   |   Gutico Clean LLC   |   Todos los derechos reservados   |   
     By <a class="textABBA" href="">ABBA Studio</a>
   </p>
 </footer>
+</body>
