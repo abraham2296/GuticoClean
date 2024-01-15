@@ -1075,7 +1075,8 @@ ul{
   display: flex;
   align-items: center;
   column-gap: 2rem; 
-  padding-left: 1rem;  
+  padding-left: 1rem;
+  background-color: rgb(247, 229, 229);
 
   height: 3.9rem;
   width: 21.4rem;
@@ -1086,7 +1087,7 @@ ul{
   margin-right: 3px;
   margin-top: -3px;
   margin-left: -3px;
-  box-shadow: 3px 3px 10px 0.5px black;
+  box-shadow: 4px 5px 10px rgb(155, 148, 148);
   transition: all 0.2s ease;
 
 }
