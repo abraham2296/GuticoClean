@@ -104,6 +104,18 @@ ul{
     text-decoration-line: underline;
 }
 /* ///responsive design navbar///*/
+/* mediano */
+@media (max-width: 440px) {
+  header{
+      width: 405px;
+      /* border: black solid 1px; */
+  }
+  .logoPrincipal{
+      /* height: 30px; */
+      width: 220px;
+  }
+}
+/* pequeno */
 @media (max-width: 400px) {
     header{
         width: 367px;
@@ -114,6 +126,7 @@ ul{
         width: 200px;
     }
 }
+
 
 /*/////////////////Section Banner Principal//////////////*/
 .banner-principal{
@@ -305,9 +318,6 @@ ul{
     transition-delay: 0.25s;
    }
 
-
-
-
   /* /////responvive design banner principal//// */
   @media (max-width: 400px) {
     .h1-principal{
@@ -373,7 +383,26 @@ ul{
  
 
     /* ////responsive design about-1/// */
+    /* mediano */
 
+    @media (max-width: 500px) {
+      .about-img{
+        width: 350px;
+      }
+      .about-text1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+      }
+      .about-p{
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      
+    }
+/* ////responsive design about-1/// */
+    /* pequeno */
     @media (max-width: 400px) {
       .about-img{
         width: 350px;
@@ -486,7 +515,14 @@ ul{
   }
 
   /* ////responsive design about-2/// */
+/* mediano */
+  @media (max-width: 500px) {
+    .about-p-2{
+      font-size: 1.1rem;
+    }
+  }
 
+  /* pequeno */
   @media (max-width: 400px) {
     .about-p-2{
       font-size: 1.1rem;
@@ -541,7 +577,48 @@ ul{
     width: 400px;
   }
   /* ////responsive design Our Services/// */
-
+/* mediano */
+  @media (max-width: 500px) {
+    .our-services{
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+    }
+    .contenedor-sub-cards{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 1.5rem;
+    }
+    .sub-cards{
+      display: flex;
+      column-gap: 1rem;
+    }
+    .icon-sub-cards{
+      width: 50px;
+    }
+    .subC{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .h3-sub{
+      font-size: 20px;
+    }
+    /* .contenedor-text-sub{ */
+      /* text-align: center; */
+    /* } */
+    .p-sub{
+      font-size: 0.8rem;
+    }
+    .img-sub-cards{
+      /* height: 400px;
+      width: 300px; */
+      display: none;
+    }
+  }
+  /* pequeno */
   @media (max-width: 400px) {
     .our-services{
       display: flex;
@@ -668,8 +745,44 @@ ul{
   margin-left: -4rem;
 }
 
- /* ////responsive design specilite carrudel/// */
-
+ /* ////responsive design specilite and carrudel/// */
+  /* mediano */
+ @media (max-width: 500px) {
+  .contenedor-specialite{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .carrusel-specialite{
+    height: 150px;
+    width: 370px;
+  }
+  .d-bloc{
+    height: 150px;
+    width: 370px;
+  }
+  .carousel-control-design{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin-top: 3.5rem;
+  }
+  .carousel-control-next{
+    margin-right: 0px;
+  }
+  .carousel-control-prev{
+    margin-left: 0px;
+  }
+  .carousel-indicators{
+    margin-bottom: 0px;
+  }
+  .isotipo-specialite{
+    width: 150px;
+  
+  }
+  
+ }
+ /* pequeno */
  @media (max-width: 400px) {
   .contenedor-specialite{
     display: flex;
@@ -802,7 +915,52 @@ ul{
 }
 
 /* ////responsive design specilite/// */
-
+/* mediano */
+@media (max-width: 500px) {
+  .choose-item {
+    height: 300px;
+    width: 430px;
+  }
+  .contenedor-choose{
+    height: 1200px;
+    width: 430px;
+  }
+  /* Box 1 and 4 */
+  .choose-img{
+    height: 300px;
+    width: 430px;
+  }
+  /* Box 2 */
+  .item-choose-card{
+    display: flex;
+    justify-content: center;
+  }
+  .choose-card{
+    height: 230px;
+    width: 360px;
+    margin-top: -300px;
+    margin-left: 0px;
+  }
+  .contenedor-text-choose-1{
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+  }
+  .h2-choose{
+    font-size: 2rem;
+  }
+  .p-choose{
+    font-size: 14px;
+  }
+  /* Box 3 */
+.h2-choose-2{
+  font-size: 2.5rem;
+}
+.p-choose-2{
+  font-size: 18px;
+}
+}
+/* ////responsive design specilite/// */
+/* pequeno */
 @media (max-width: 400px) {
   .choose-item {
     height: 300px;
@@ -845,6 +1003,118 @@ ul{
 .p-choose-2{
   font-size: 18px;
 }
+}
+
+/* ///////////////////section Comment///////////// */
+
+.comment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.h2-comment{
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.8rem;
+  text-align: center;
+  color: #004182;
+  margin-bottom: 2rem;
+}
+.h2-comment span{
+  color: #80CB2B;
+}
+.carousel-comment {
+  width: 700px;
+
+}
+.carousel-control-prev-comment{
+  background-color: #0c66ed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10rem;
+  margin-left: -4rem;
+}
+.carousel-control-next-comment{
+  background-color: #0c66ed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10rem;
+  margin-right: -4rem;
+}
+.img-testimonio{
+  width: 700px;
+}
+
+/* ////responsive design section comment/// */
+/* mediano */
+@media (max-width: 500px) {
+  .h2-comment{
+    font-size: 2rem;
+    text-align: center;
+    color: #004182;
+    margin-bottom: 2rem;
+  }
+  .img-testimonio{
+    width: 380px;
+  }
+  .carousel-comment {
+    width: 380px;
+  
+  }
+  .carousel-control-next-comment{
+    background-color: #0c66ed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-right: -1rem;
+  }
+  .carousel-control-prev-comment{
+    background-color: #0c66ed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-left: -1rem;
+  }
+  
+}
+/* ////responsive design section comment/// */
+/* pequeno */
+@media (max-width: 400px) {
+  .h2-comment{
+    font-size: 2rem;
+    text-align: center;
+    color: #004182;
+    margin-bottom: 2rem;
+  }
+  .img-testimonio{
+    width: 360px;
+  }
+  .carousel-comment {
+    width: 360px;
+  
+  }
+  .carousel-control-next-comment{
+    background-color: #0c66ed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-right: -1rem;
+  }
+  .carousel-control-prev-comment{
+    background-color: #0c66ed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-left: -1rem;
+  }
+  
 }
 
 
@@ -935,8 +1205,9 @@ ul{
 }
 
 /* ////responsive design section green/// */
+/* mediano */
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .h2-green{
     font-size: 2.2rem;
   }
@@ -952,83 +1223,23 @@ ul{
     font-size: 1.2rem;
   }
 }
-
-/* ///////////////////section Comment///////////// */
-
-.comment{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 4rem;
-}
-.h2-comment{
-  font-family: 'Nunito', sans-serif;
-  font-size: 2.8rem;
-  text-align: center;
-  color: #004182;
-  margin-bottom: 2rem;
-}
-.h2-comment span{
-  color: #80CB2B;
-}
-.carousel-comment {
-  width: 700px;
-
-}
-.carousel-control-prev-comment{
-  background-color: #0c66ed;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-top: 10rem;
-  margin-left: -4rem;
-}
-.carousel-control-next-comment{
-  background-color: #0c66ed;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-top: 10rem;
-  margin-right: -4rem;
-}
-.img-testimonio{
-  width: 700px;
-}
-
-/* ////responsive design section comment/// */
-
+/* ////responsive design section green/// */
+/* pequeno */
 @media (max-width: 400px) {
-  .h2-comment{
-    font-size: 2rem;
-    text-align: center;
-    color: #004182;
-    margin-bottom: 2rem;
+  .h2-green{
+    font-size: 2.2rem;
   }
-  .img-testimonio{
-    width: 360px;
+  .contenedor-btn{
+    display: flex;
+    column-gap: 2.5rem;
   }
-  .carousel-comment {
-    width: 360px;
-  
-  }
-  .carousel-control-next-comment{
-    background-color: #0c66ed;
-    width: 30px;
+  .btn {
+    width: 140px;
     height: 30px;
-    border-radius: 50%;
-    margin-top: 70px;
-    margin-right: -1rem;
   }
-  .carousel-control-prev-comment{
-    background-color: #0c66ed;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-top: 70px;
-    margin-left: -1rem;
+  .btn span {
+    font-size: 1.2rem;
   }
-  
 }
 
 
@@ -1087,7 +1298,7 @@ ul{
   margin-right: 3px;
   margin-top: -3px;
   margin-left: -3px;
-  box-shadow: 4px 5px 10px rgb(155, 148, 148);
+  box-shadow: 4px 5px 10px rgb(143, 134, 134);
   transition: all 0.2s ease;
 
 }
@@ -1116,7 +1327,57 @@ ul{
 }
 
 /* ////responsive design section End/// */
+/* mediano */
+@media (max-width: 500px) {
 
+  .end{
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    row-gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .logo-end{
+    height: 240px;
+    width: 190px;
+  }
+  .content-text-end{
+    column-gap: 1rem;
+  }
+  .h3-end{
+    font-size: 1.5rem;
+  }
+  .p-end{
+    font-size: 12px;
+  }
+  .contact-end{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .item-end{
+    column-gap: 0.5rem;   
+    
+    height: 1.9rem;
+    width: 9rem;
+  }
+  .p-icono-end{
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  .icono-end{
+    width: 15px;
+  }
+  .map-img-end{
+    height: 130px;
+    width: 390px;
+    border-radius: 20px;
+    border: #004182 solid 3px;
+    /* margin-left: 5px; */
+  }
+}
+/* ////responsive design section End/// */
+/* pequeno */
 @media (max-width: 400px) {
 
   .end{
@@ -1142,7 +1403,7 @@ ul{
   .contact-end{
     display: flex;
     flex-direction: column;
-    row-gap: 0px;
+    row-gap: 1px;
   }
   .item-end{
     column-gap: 0.5rem;   
@@ -1184,29 +1445,18 @@ ul{
     color: #004182;
   }
     /* ////responsive design footer/// */
-
+  /* mediano */
+    @media (max-width: 500px) {
+      .text-footer{
+        font-size: 1rem;
+        padding-top: 1rem;
+      }
+    }
+    /* ////responsive design footer/// */
+/* pequeno */
     @media (max-width: 400px) {
       .text-footer{
         font-size: 1rem;
         padding-top: 1rem;
       }
     }
-    
-/* /////////section boton flotante////// */
-/* .btn-flotante{
-  height: 100px;
-  width: 100%;
-  
-  right: 10px;
-}
-    .btn-container{
-      height: 40px;
-      width: 40px;
-      background-color: #80CB2B;
-      color: #004182;
-      text-align: center;
-      font-size: 25px;
-      border: #004182 solid 2px;
-      border-radius: 50px;
-      right: 50px;
-    } */
